@@ -1,5 +1,6 @@
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import { ModeToggle } from "../ModeToggler";
@@ -10,17 +11,22 @@ import { useAppDispatch } from "../../../redux/hook";
 import { role } from "../../../constants/role";
 import { toast } from "sonner";
 import type { Role } from "../../../types";
+import { useTheme } from "../../../hooks/useTheme";
 
 const Navbar = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+    const { theme } = useTheme(); // 'light' or 'dark'
+    const [ ,setMounted] = useState(false);
+    useEffect(() => setMounted(true), []);
 
     const navLinks = [
         { name: "Shop", path: "/products" },
         { name: "Women", path: "/women/products" },
         { name: "Men", path: "/men/products" },
         { name: "About", path: "/about" },
+        { name: "Policy", path: "/Policy" }
     ];
 
     const { data, isLoading } = useGetMeQuery(undefined);
@@ -69,7 +75,11 @@ const Navbar = () => {
                     {/* Logo Section - Left */}
                     <div className="flex items-center flex-shrink-0">
                         <NavLink to="/" className="flex items-center">
-                            <img src="/logo.png" className="h-[45px] w-auto" alt="Logo" />
+                            <img
+                                src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"}
+                                className="h-[45px] w-auto"
+                                alt="Logo"
+                            />
                         </NavLink>
                     </div>
 

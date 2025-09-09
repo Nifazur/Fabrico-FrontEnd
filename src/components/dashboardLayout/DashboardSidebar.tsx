@@ -11,12 +11,14 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "../ui/sidebar";
-import { Link, useLocation } from "react-router-dom"; // react-router v6+
+import { Link, NavLink, useLocation } from "react-router-dom"; // react-router v6+
 import { getSidebarItems } from "../../utils/getSidebarItems";
 import { useGetMeQuery } from "../../redux/features/userApi";
 import type { ISidebarSubItem } from "../../types";
+import { useTheme } from "../../hooks/useTheme";
 
 function DashboardSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const { theme } = useTheme();
   const { data: userData } = useGetMeQuery(undefined);
   const location = useLocation();
 
@@ -26,10 +28,13 @@ function DashboardSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     <Sidebar {...props} className="z-50">
       {/* Header */}
       <SidebarHeader className="items-center p-6 pt-2">
-        <Link to="/" className="flex items-center gap-2">
-          <img className="w-12 h-12" src="/image.png" alt="Fast Box Logo" />
-          <span className="text-2xl font-bold text-primary">Fast Box</span>
-        </Link>
+        <NavLink to="/" className="flex items-center">
+          <img
+            src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"}
+            className="h-[45px] w-auto"
+            alt="Logo"
+          />
+        </NavLink>
       </SidebarHeader>
 
       {/* Sidebar Content */}
@@ -47,11 +52,10 @@ function DashboardSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton
                         asChild
-                        className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
-                          isActive
+                        className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${isActive
                             ? "text-primary bg-primary/10"
                             : "hover:bg-accent"
-                        }`}
+                          }`}
                       >
                         <Link to={item.url} className="flex items-center gap-2 w-full">
                           {item.icon && <item.icon className="w-4 h-4" />}

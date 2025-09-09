@@ -25,6 +25,7 @@ import type { Role } from '../types';
 import DashboardLayout from '../components/dashboardLayout/DashboardLayout';
 import AboutUsPage from '../pages/public/About';
 import { UpdateProductPage } from '../pages/admin/UpdateProductPage';
+import { TermsAndConditionsPage } from '../pages/public/Terms/TermsAndConditionsPage';
 // import Products from '../pages/Products';
 // import ProductDetails from '../pages/ProductDetails';
 // import About from '../pages/About';
@@ -60,10 +61,10 @@ export const router = createBrowserRouter([
                 path: 'about',
                 Component: AboutUsPage,
               },
-            //   {
-            //     path: 'contact',
-            //     Component: Contact,
-            //   },
+              {
+                path: 'Policy',
+                Component: TermsAndConditionsPage,
+              },
             //   // Auth Routes
             {
                 path: "login",
