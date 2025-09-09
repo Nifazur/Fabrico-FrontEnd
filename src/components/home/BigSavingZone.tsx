@@ -19,7 +19,7 @@ const SavingCard = ({ title, desc, offer, img, bgColor, textColor, className, ba
       <p className="font-semibold mt-1">{offer}</p>
       <ArrowDown className="my-4"/>
       <div className="mt-auto">
-        <Button asChild variant="outline" className="border-current text-current bg-transparent hover:bg-white/20">
+        <Button asChild  className="">
           <Link to='/products'>SHOP NOW</Link>
         </Button>
       </div>
