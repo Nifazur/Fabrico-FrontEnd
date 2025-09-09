@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => (
       className="absolute inset-0 w-full h-full object-cover opacity-40"
     />
     <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4">
-      <p className="text-lg font-semibold text-primary">ABOUT EUPHORIA</p>
+      <p className="text-lg font-semibold text-primary">ABOUT Fabrico</p>
       <h1 className="text-4xl md:text-6xl font-bold mt-2">Our Story</h1>
       <p className="mt-4 max-w-2xl text-lg text-white/90">
         Crafting fashion that feels like you. Discover the journey, values, and people behind the style.
@@ -45,7 +45,7 @@ const MissionSection: React.FC = () => (
         <h2 className="text-3xl font-bold text-foreground mb-4">Who We Are</h2>
         <div className="space-y-4 text-muted-foreground text-base leading-relaxed">
           <p>
-            Euphoria was born from a simple idea: that fashion should be effortless, expressive, and accessible. 
+            Fabrico was born from a simple idea: that fashion should be effortless, expressive, and accessible. 
             We started in a small studio with a passion for creating high-quality apparel that doesn't just look good, but feels incredible to wear.
           </p>
           <p>
@@ -60,10 +60,10 @@ const MissionSection: React.FC = () => (
 // --- 3. Journey (Timeline) Section ---
 const JourneySection: React.FC = () => {
     const timelineEvents = [
-        { year: "2019", title: "The Spark", description: "Our founders, a designer and a marketer, sketch the first Euphoria designs on a coffee shop napkin.", img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500" },
+        { year: "2019", title: "The Spark", description: "Our founders, a designer and a marketer, sketch the first Fabrico designs on a coffee shop napkin.", img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500" },
         { year: "2021", title: "First Collection Launch", description: "After months of sourcing and perfecting, we launch our first collection online to a small but passionate audience.", img: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=500" },
         { year: "2023", title: "Expanding Our Roots", description: "We moved into our first official headquarters and expanded our team, focusing on sustainable practices.", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500" },
-        { year: "Today", title: "A Growing Community", description: "Euphoria is now a thriving brand, loved by thousands worldwide, with a commitment to quality and style.", img: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500" },
+        { year: "Today", title: "A Growing Community", description: "Fabrico is now a thriving brand, loved by thousands worldwide, with a commitment to quality and style.", img: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500" },
     ];
 
     return (
@@ -161,7 +161,7 @@ const CommunitySection: React.FC = () => (
             <div className="text-center lg:text-left">
                 <h2 className="text-3xl font-bold text-foreground">Join Our Community</h2>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                    Follow us on social media and become part of the Euphoria family. Share your style with #EuphoriaStyle for a chance to be featured!
+                    Follow us on social media and become part of the Fabrico family. Share your style with #FabricoStyle for a chance to be featured!
                 </p>
                 <div className="mt-6 flex justify-center lg:justify-start gap-4">
                     <Button variant="outline" size="icon"><Instagram className="h-5 w-5"/></Button>

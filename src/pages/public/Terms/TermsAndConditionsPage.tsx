@@ -38,9 +38,9 @@ export const TermsAndConditionsPage: React.FC = () => {
 
                 <article className="prose dark:prose-invert max-w-none">
                     <Paragraph>
-                        Welcome to Euphoria! These terms and conditions outline the rules and regulations for the use of
-                        Euphoria's Website, located at [Your Website URL]. By accessing this website we assume you
-                        accept these terms and conditions. Do not continue to use Euphoria if you do not agree to take
+                        Welcome to Fabrico! These terms and conditions outline the rules and regulations for the use of
+                        Fabrico's Website, located at [Your Website URL]. By accessing this website we assume you
+                        accept these terms and conditions. Do not continue to use Fabrico if you do not agree to take
                         all of the terms and conditions stated on this page.
                     </Paragraph>
 
@@ -62,7 +62,7 @@ export const TermsAndConditionsPage: React.FC = () => {
                     <BulletList items={[
                         "You are granted a limited license to access and make personal use of this website.",
                         "This license does not include any resale or commercial use of this site or its contents.",
-                        "Any unauthorized use terminates the permission or license granted by Euphoria."
+                        "Any unauthorized use terminates the permission or license granted by Fabrico."
                     ]} />
 
                     <SectionTitle>3. Products</SectionTitle>
@@ -83,17 +83,17 @@ export const TermsAndConditionsPage: React.FC = () => {
 
                     <SectionTitle>5. Intellectual Property Rights</SectionTitle>
                     <Paragraph>
-                        Other than the content you own, under these Terms, Euphoria and/or its licensors own all the
+                        Other than the content you own, under these Terms, Fabrico and/or its licensors own all the
                         intellectual property rights and materials contained in this Website. You are granted limited
-                        license only for purposes of viewing the material contained on this Website. "Euphoria" and our
+                        license only for purposes of viewing the material contained on this Website. "Fabrico" and our
                         logos are our registered trademarks.
                     </Paragraph>
 
                     <SectionTitle>6. Limitation of Liability</SectionTitle>
                     <Paragraph>
-                        In no event shall Euphoria, nor any of its officers, directors, and employees, be held liable
+                        In no event shall Fabrico, nor any of its officers, directors, and employees, be held liable
                         for anything arising out of or in any way connected with your use of this Website whether such
-                        liability is under contract. Euphoria, including its officers, directors, and employees shall not
+                        liability is under contract. Fabrico, including its officers, directors, and employees shall not
                         be held liable for any indirect, consequential, or special liability arising out of or in any
                         way related to your use of this Website.
                     </Paragraph>
@@ -116,7 +116,7 @@ export const TermsAndConditionsPage: React.FC = () => {
                     <Paragraph>
                         If you have any questions about these Terms, please contact us at:
                         <br />
-                        Email: <a href="mailto:support@euphoria.com" className="text-primary hover:underline">support@euphoria.com</a>
+                        Email: <a href="mailto:support@Fabrico.com" className="text-primary hover:underline">support@Fabrico.com</a>
                         <br />
                         Address: [Your Company Address]
                     </Paragraph>

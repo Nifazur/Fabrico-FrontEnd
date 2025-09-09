@@ -17,7 +17,7 @@ const footerSections = [
   {
     id: 'company',
     title: 'Company',
-    links: ['About Us', 'euphoria Blog', 'euphoriastan', 'Collaboration', 'Media'],
+    links: ['About Us', 'Fabrico Blog', 'Fabricostan', 'Collaboration', 'Media'],
   },
   {
     id: 'info',
@@ -28,7 +28,7 @@ const footerSections = [
     id: 'location',
     title: 'Location',
     links: [
-      'support@euphoria.in',
+      'support@Fabrico.in',
       'Eklingpura Chouraha, Ahmedabad Main Road',
       '(NH 8- Near Mahadev Hotel) Udaipur, India- 313002',
     ],
@@ -167,7 +167,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="py-6 text-center text-sm text-muted-foreground">
-          Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+          Copyright © 2023 Fabrico Folks Pvt Ltd. All rights reserved.
         </div>
       </div>
     </footer>
